@@ -3,9 +3,7 @@ import Ans from "./Ans";
 import db from "./db";
 
 function App() {
-  const den = db.map(questions => (
-    <Ans que={questions.question} ans={questions.answer} />
-  ));
+  const den = db.map(questions => <Ans que={questions} ans={questions} />);
   return <div>{den}</div>;
 }
 
