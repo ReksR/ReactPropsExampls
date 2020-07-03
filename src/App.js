@@ -1,18 +1,13 @@
 import React from "react";
-import Ans from "./Ans";
-import db from "./db";
-/*
-function App() {
-  const den = db.map(questions => <Ans que={questions} ans={questions} />);
-  return <div>{den}</div>;
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { name: "jesus" };
+  }
+  render() {
+    return <h1>hi {this.state.name}</h1>;
+  }
 }
 
 export default App;
-*/
-
-class App extends React.Component {
-  render() {
-    const den = db.map(questions => <Ans que={questions} ans={questions} />);
-    return <div>{den}</div>;
-  }
-}
